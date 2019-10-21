@@ -2,6 +2,8 @@
 
 > Currency exchange graphs made by Stefanos Bekiaris
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a5e4b5c-6a8d-4fde-8dc0-8059b42b2df7/deploy-status)](https://app.netlify.com/sites/stupefied-noyce-b3e049/deploys)
+
 ## Build Setup
 
 ``` bash
