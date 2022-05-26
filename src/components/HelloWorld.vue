@@ -1,49 +1,19 @@
-
 <template>
-  <div style="margin:0px auto;">
+  <div style="margin:0px auto;">  
     <div>
-      <form style="margin: 0px auto; float: none; display: table; text-align:center; " class="form-group">
-        <input        
-          style="text-align:center; " 
-          class="form-control form-control-lg"
-          name="cur1"
-          id="cur1"
-          type="text"
-          v-model="currency1"
-          @change="init"
-        />
-        <input
-          style="text-align:center; "
-          class="form-control form-control-lg"
-          name="cur2"
-          id="cur2"
-          type="text"
-          v-model="currency2"
-          @change="init"
-        />
-      </form>      
-      <h1>Latest price {{currency1}}/{{currency2}}: {{this.dataset[this.dataset.length-1]}}</h1>
-      <div style="margin: 0% auto"><trend :data="this.dataset" :gradient="['#6fa8dc', '#42b983', '#2c3e50']" auto-draw smooth></trend></div>      
+      <div style="margin: 0px auto; float: none; display: table; text-align:center; " class="form-group">
+      <h1>Judyta I Love You &#10084; </h1>
       <div style="margin: 0px auto; float: none; display: table; " class="card text-white bg-primary mb-3">
         <p class="card-header" style="font-size:150%">Exchange rate calculator:</p>
         <div class="card-body">
-          <form class="form-group">
-            <input
-              style="width:40%; margin:0px auto; text-align:center;"
-              class="form-control form-control-lg"
-              name="cur1"
-              id="cur1"
-              type="text"
-              v-model="value"
-            />            
-          </form>
             <div>
               <p style="font-size:150%">{{(value*this.dataset[this.dataset.length-1]).toFixed(4)}}</p> 
-              <label style="font-size:150%">{{currency1}} to {{currency2}}</label><br></br>  
+              <label style="font-size:150%">{{currency1}} to {{currency2}}</label>
               <button class="btn btn-warning" @click="swap">Switch</button>           
             </div>          
         </div>
       </div>
+    </div>
     </div>
     <footer style="position:relative; bottom:10px;">
       <p>
